@@ -5,11 +5,11 @@ import os
 load_dotenv()
 
 # Telegram API credentials obtained from https://my.telegram.org/auth
-API_ID = int(os.getenv("API_ID", "24184946"))  # Your Telegram API ID
-API_HASH = os.getenv("API_HASH", "db7aa8593d6422dd3924f629d6cbe808")  # Your Telegram API Hash
+API_ID = int(os.getenv("API_ID", "29020790"))  # Your Telegram API ID
+API_HASH = os.getenv("API_HASH", "e5d9ebcb5e01ac651a3c831020d04c1d")  # Your Telegram API Hash
 
 # List of Telegram bot tokens used for file upload/download operations
-BOT_TOKENS = os.getenv("BOT_TOKENS", "7820082001:AAGCzaBFVA47ckxy_wWnXYIqVP3Cl8HRvpk").strip(", ").split(",")
+BOT_TOKENS = os.getenv("BOT_TOKENS", "7928960189:AAHKCq_qQcUIszuZaRwcGcmFmMUgOX5Mx4c").strip(", ").split(",")
 BOT_TOKENS = [token.strip() for token in BOT_TOKENS if token.strip() != ""]
 
 # List of Premium Telegram Account Pyrogram String Sessions used for file upload/download operations
@@ -19,7 +19,7 @@ STRING_SESSIONS = [
 ]
 
 # Chat ID of the Telegram storage channel where files will be stored
-STORAGE_CHANNEL = int(os.getenv("STORAGE_CHANNEL", "-1002394885619"))  # Your storage channel's chat ID
+STORAGE_CHANNEL = int(os.getenv("STORAGE_CHANNEL", "-1002480769932"))  # Your storage channel's chat ID
 
 # Message ID of a file in the storage channel used for storing database backups
 DATABASE_BACKUP_MSG_ID = int(
@@ -27,7 +27,7 @@ DATABASE_BACKUP_MSG_ID = int(
 )  # Message ID for database backup
 
 # Password used to access the website's admin panel
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "FN-TG-DRIVE")  # Default to "admin" if not set
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "Shivam-op")  # Default to "admin" if not set
 
 # Determine the maximum file size (in bytes) allowed for uploading to Telegram
 # 1.98 GB if no premium sessions are provided, otherwise 3.98 GB
@@ -51,10 +51,10 @@ WEBSITE_URL = os.getenv("WEBSITE_URL", None)
 # For Using TG Drive's Bot Mode
 
 # Main Bot Token for TG Drive's Bot Mode
-MAIN_BOT_TOKEN = os.getenv("MAIN_BOT_TOKEN", "7948986280:AAHZlxNXSN26imTu_SxfzWbDWnZKZEsIX5g")
+MAIN_BOT_TOKEN = os.getenv("MAIN_BOT_TOKEN", "7928960189:AAHKCq_qQcUIszuZaRwcGcmFmMUgOX5Mx4c")
 if MAIN_BOT_TOKEN.strip() == "":
     MAIN_BOT_TOKEN = None
 
 # List of Telegram User IDs who have admin access to the bot mode
-TELEGRAM_ADMIN_IDS = os.getenv("TELEGRAM_ADMIN_IDS", "7593550190").strip(", ").split(",")
+TELEGRAM_ADMIN_IDS = os.getenv("TELEGRAM_ADMIN_IDS", "1335552071").strip(", ").split(",")
 TELEGRAM_ADMIN_IDS = [int(id) for id in TELEGRAM_ADMIN_IDS if id.strip() != ""]
