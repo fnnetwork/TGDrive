@@ -27,7 +27,7 @@ DATABASE_BACKUP_MSG_ID = int(
 )  # Message ID for database backup
 
 # Password used to access the website's admin panel
-ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "FN-TG-DRIVE")  # Default to "admin" if not set
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "ELECTRA-TG-DRIVE-PRI")  # Default to "admin" if not set
 
 # Determine the maximum file size (in bytes) allowed for uploading to Telegram
 # 1.98 GB if no premium sessions are provided, otherwise 3.98 GB
