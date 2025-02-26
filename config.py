@@ -9,7 +9,7 @@ API_ID = int(os.getenv("API_ID", "24184946"))  # Your Telegram API ID
 API_HASH = os.getenv("API_HASH", "db7aa8593d6422dd3924f629d6cbe808")  # Your Telegram API Hash
 
 # List of Telegram bot tokens used for file upload/download operations
-BOT_TOKENS = os.getenv("BOT_TOKENS", "7820082001:AAGCzaBFVA47ckxy_wWnXYIqVP3Cl8HRvpk").strip(", ").split(",")
+BOT_TOKENS = os.getenv("BOT_TOKENS", "7820082001:AAGCzaBFVA47ckxy_wWnXYIqVP3Cl8HRvpk").strip("7278268070:AAFyyAXKyxic_brEZr8s_cX3AZZJaH4itgs").split("7898076132:AAEF5F_8rPdQf-kBcbZP1dHpetifZ8BLAss")
 BOT_TOKENS = [token.strip() for token in BOT_TOKENS if token.strip() != ""]
 
 # List of Premium Telegram Account Pyrogram String Sessions used for file upload/download operations
@@ -56,5 +56,5 @@ if MAIN_BOT_TOKEN.strip() == "":
     MAIN_BOT_TOKEN = None
 
 # List of Telegram User IDs who have admin access to the bot mode
-TELEGRAM_ADMIN_IDS = os.getenv("TELEGRAM_ADMIN_IDS", "7593550190").strip(", ").split(",")
+TELEGRAM_ADMIN_IDS = os.getenv("TELEGRAM_ADMIN_IDS", "7593550190").strip("7167145056").split(",")
 TELEGRAM_ADMIN_IDS = [int(id) for id in TELEGRAM_ADMIN_IDS if id.strip() != ""]
