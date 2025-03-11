@@ -9,8 +9,9 @@ API_ID = int(os.getenv("API_ID", "26481303"))  # Your Telegram API ID
 API_HASH = os.getenv("API_HASH", "c950aa8fafd22287c3d4e9a344cb89ea")  # Your Telegram API Hash
 
 # List of Telegram bot tokens used for file upload/download operations
-BOT_TOKENS = os.getenv("BOT_TOKENS", "7820082001:AAGCzaBFVA47ckxy_wWnXYIqVP3Cl8HRvpk", "7278268070:AAFyyAXKyxic_brEZr8s_cX3AZZJaH4itgs").strip(", ").split(",")
-BOT_TOKENS = [token.strip() for token in BOT_TOKENS if token.strip() != ""]
+BOT_TOKENS = os.getenv("BOT_TOKENS", "7820082001:AAGCzaBFVA47ckxy_wWnXYIqVP3Cl8HRvpk,7278268070:AAFyyAXKyxic_brEZr8s_cX3AZZJaH4itgs,7898076132:AAEF5F_8rPdQf-kBcbZP1dHpetifZ8BLAss")
+BOT_TOKENS = BOT_TOKENS.strip(", ").split(",")
+BOT_TOKENS = [token.strip() for token in BOT_TOKENS if token.strip()]
 
 # List of Premium Telegram Account Pyrogram String Sessions used for file upload/download operations
 STRING_SESSIONS = os.getenv("STRING_SESSIONS", "BAGUEpcAuPWmOQtHCDVsZFRlffAP9hkeR3k6TVaoxxdiBpUl1dz2Ntvm5l70DOKDYnpJXzIjPxfjk0GrtUBCNf74iFgmSWre1F7CXNQpUw-w8HmZI4EmScWgRheDytUMjejX6f7-LRQC_Ns_zksrhrLUDa2pj27wDdeRevtJC6pPvPnDqc3149eBGqaW26iirRBw4nT-kAbx-3EEwHcjp-WWFffEFdToSS5miEnNr-h8EA3ozWa6iH6_DLxyz288I_b6-ZE59l2YatLs415l5qHZlGQ83A3LGyRuxE1zKNll7jFfSJwWEdo_IE9oya3hUaSQE6aqR30aaON0-FNAqy_R7uwKvQAAAAHSItAjAA").strip(", ").split(",")
